@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 body {
-  background-color: #ff80b3;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
   font-family: 'Oswald', sans-serif;
 }
 table, th, td {
@@ -10,12 +10,16 @@ table, th, td {
   text-align: center;
   color: #660033;
 }
+th {
+  background-color: #99ffcc;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .numerator {
   background-color: #dfff80;
 }
 .denominator {
   background-color: #80ccff;
-}
-th {
-  background-color: #99ffcc;
 }
