@@ -13,6 +13,9 @@ table, th, td {
 th {
   background-color: #99ffcc;
 }
+td:hover { 
+  font-weight: bold;
+}
 table {
   margin: auto;
 }
