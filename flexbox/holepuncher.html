@@ -8,23 +8,61 @@
         margin: 0;
         padding: 0;
       }
-      .flex-container {
+      .flex-container1 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .flex-container1 > div {
+        padding: 10px;
+        text-align: center;
+        font-family: 'Montserrat Alternates', sans-serif;
+      }
+
+      .flex-container1 > div:hover {
+        color: white;
+      }
+
+      .b-1 {
+        background-color: #66ff33;
+        flex: 1;
+      }
+
+      .b-2 {
+        background-color: #66ffcc;
+        flex: 2;
+      }
+
+      .b-3 {
+        background-color: #ffcc00;
+        flex: 3;
+      }
+
+      .b-4 {
+        background-color: #ff66a3;
+        flex: 4;
+      }
+
+      .flex-container2 {
         display: flex;
         /* border: 1px solid red; */
         /* width: 1200px; */
         flex-flow: row wrap;
         justify-content: center;
-        /* align-items: center; */
+        align-items: flex-start;
       }
-      .flex-container > section {
+      .flex-container2 > section {
         border: 1px solid silver;
         margin: 10px;
         padding: 10px;
         flex: 0 600px;
       }
-      .flex-container > section:hover {
+      .flex-container2 > section:hover {
         border-color: #9933ff;
       }
+
+
+
       /* .ch-container1 { */
         /* display: flex;
         flex-flow: column;
@@ -58,6 +96,7 @@
       }
 
       .b1 {
+
         /* order: 1; */
         /* flex-basis: 600px; */
       }
@@ -77,24 +116,30 @@
     </style>
   </head>
   <body>
-    <div class="flex-container">
-      <section>
+    <header class="flex-container1">
+      <div class="b-1">Что это?</div>
+      <div class="b-2">История</div>
+      <div class="b-3">Конструкция и принцип действия</div>
+      <div class="b-4">Разновидности</div>
+    </header>
+    <div class="flex-container2">
+      <section style="background-color: #66ff33;">
         <h2>Что это?  1</h2>
         <p>Дыроко́л — механическое устройство для пробивания отверстий в бумаге. Обычно дырокол делает два отверстия круглой формы для хранения документов в скоросшивателе, но также производятся дыроколы на четыре отверстия и на одно.
         </p>
         <!-- <img src="imgs/hp.jpg" alt="Мой дырокол"/> -->
       </section>
-      <section>
+      <section style="background-color: #66ffcc">
         <h2>История 2</h2>
         <p>Изобретателем дырокола считается Фридрих Зённеккен из Бонна, который 14 ноября 1886 года первым подал заявку на получение патента на устройство под названием Papierlocher für Sammelmappen. Примечательно, что он же изобрел скоросшиватели для подшивки бумаги с отверстиями, сделанными дыроколом.</p>
       </section>
-      <section>
+      <section style="background-color: #ffcc00;">
         <h2>Конструкция и принцип действия  3</h2>
         <p>Конструктивно состоит из двух круглых стержневых ножей (режущая кромка обычно неровной формы для плавного среза), опускающихся на бумагу сверху под давлением при нажатии рукой. Под ножами находятся отверстия, ведущие в бумагоприёмник (который накапливает вырезанные кружочки бумаги). Ножи обычно крепятся на ручке, работающей как рычаг (ножи находятся ближе к оси вращения, чем точка приложения усилий к ручке). Снизу ручки находится пружина для возврата устройства в исходное положение после отреза. Промышленные дыроколы имеют длинную ручку, создающую большее усилие на конце рычага, что позволяет проделывать отверстия сразу в сотнях листов. Существуют конструкции дыроколов с полыми сверлами вместо ножей, бумага высверливается, её остатки накапливаются внутри сверла. Такое небольшое устройство позволяет малыми усилиями обрабатывать промышленные объёмы листов.
         </p>
         <!-- <img src="imgs/hp.jpg" alt="Мой дырокол"/> -->
       </section>
-      <section>
+      <section style="background-color: #ff66a3;">
         <h2>Разновидности 4</h2>
         <section class="ch-container1">
           <section class="b1">
