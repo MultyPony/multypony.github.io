@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+
+/* Images */
+#st {background-image: url("../images/smart-tony.png");}
+#goliy {background-image: url("../images/goliy.png");}
+#para {background-image: url("../images/para.png");}
+#lines {background-image: url("../images/lines.png");}
+#black {background-image: url("../images/black.jpg");}
+#hands {background-image: url("../images/hands.jpg");}
+#plane {background-image: url("../images/plane.jpg");}
+#mount {background-image: url("../images/mount.png");}
+#bold {background-image: url("../images/bold.jpg");
+  background-position: top !important;
+}
+#biker {background-image: url("../images/biker.jpg");}
+#book {background-image: url("../images/book.jpg");}
+#tiger {background-image: url("../images/tiger.jpg");}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+}
+
+/* Menu */
+nav {
+  width: 65%;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  margin-top: 1rem;
+  list-style-type: none;
+  /* text */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+li {
+  flex: 0 1 calc(100% / 7);
+  background-color: #ffc400;
+  padding: 1.1rem;
+}
+
+li:nth-child(1n+2) {
+  border-left: 1px solid white;
+}
+
+li:hover {
+  background-color: #eed37b;
+}
+
+
+main {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: wrap;
+  padding-top: 1rem;
+}
+
+.box {
+  position: relative;
+  width: 20%;
+  /* box-sizing: border-box; */
+}
+
+.box2x2, .box2x1 {
+  width: 40%;
+}
+
+.box::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.box2x2::before, .box2x1::before {
+  padding-bottom: 50%;
+}
+
+.helper {
+  height: 0;
+  width: 100%;
+  padding-bottom: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* images */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #242424;
+  border: 3px solid white;
+  /* text */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.box2x2 + .box + .box + .box + .box {
+ margin-left: 40%;
+}
+
+.yellow {
+  background-color: #ffc400;
+  color: black;
+}
+
+.yellow i {
+  color: #9b7800;
+}
+
+.yellow .uline {
+  border-color: #9b7800;
+}
+
+.uline {
+  padding-bottom: 0.2rem;
+  font-size: 0.5rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+.uline:hover {
+  border-bottom: 2px solid #747b84;
+}
+
+li i {
+ float: right;
+ border: solid black;
+ border-width: 0 1px 1px 0;
+ display: inline-block;
+ padding: 3px;
+ margin-top: 3px;
+}
+
+.arrow {
+  border-color: #8f710a;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#st, #tiger, #about, #board{
+  border-top: none;
+}
+
+.fa-comment {
+  float: right;
+  color: #676767;
+}
+
+.date {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: .1rem;
+}
+
+.text2 {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  font-weight: bold;
+  padding: 2rem 1.9rem;
+}
+
+.text2 h1 {
+  margin-bottom: 0.5rem;
+  letter-spacing: .1rem;
+}
+
+.text3 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 2rem 1.9rem
+}
+
+.text3 h2 {
+  letter-spacing: .1rem;
+  line-height: 2rem;
+}
+
+
+#goliy .uline {
+  border-color: #e6e3ea;
+}
+
+.twitter {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 2rem 1.9rem;
+}
+
+.twitter h5 + p {
+  text-transform: none;
+  color: #8f710a;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.twitter span {
+  color: black;
+}
+
+.twitter h5 + p + p{
+  font-size: 0.5rem;
+  letter-spacing: .1rem;
+}
+
+.fa-twitter {
+  color: black !important;
+  margin-right: 1rem;
+}
+
+.wrapper {
+  background-color: #f0f0f0;
+}
