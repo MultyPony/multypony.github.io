@@ -94,20 +94,28 @@
         /* height: 60vh; */
       }
 
-      main section {
+      .row {
         /* background-color: gray; */
         /* border-left: 1px solid white; */
         /* border-right: white; */
         color: #4a0c0c;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         padding: 2rem;
         max-width: 700px;
         font-size: 1.5rem;
       }
 
+      .mid {
+        margin: 0 auto;
+      }
+
+      .left {
+        margin-left: 10%;
+      }
+
       footer {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: wrap;
         justify-content: center;
         align-items: center;
         background-image: linear-gradient(to bottom, #660000, #800000);
@@ -131,9 +139,27 @@
         padding: 1rem;
       }
 
-      /* li a {
-        text-decoration: underline;
-      } */
+      img.l {
+        float: right;
+        display: block;
+        width: 15rem;
+        height: 15rem;
+        margin-right: .5em;
+      }
+
+      img.r {
+        float: left;
+        display: block;
+        width: 15rem;
+        height: 15rem;
+        margin-left: .5em;
+      }
+
+      .flex {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1400px;
+      }
 
     </style>
   </head>
@@ -145,17 +171,28 @@
       <!-- <span>Пекарня "Дося"</span> -->
     </header>
     <main>
-      <section>
+      <section class="row mid">
         <h2>Мы не ПОРОШОК!</h2>
 
         <p>Этого всего вы не сможете у нас заказать, зато мы делаем потрясные булочки с корицей, а это вам не абы что. О таких булочках легенды у нас в городе ходят что уж тут сказать. Помимо булочек у нас есть морс вкусный, но это так, если хочет кто.
         </p>
     </section>
+    <section class="row left flex">
+      <div>
+        <img class="l" src="korica.jpeg">
+        <p>Этого всего вы не сможете у нас заказать, зато мы делаем потрясные булочки с корицей, а это вам не абы что. О таких булочках легенды у нас в городе ходят что уж тут сказать. Помимо булочек у нас есть морс вкусный, но это так, если хочет кто.</p>
+      </div>
+      <div>
+        <img class="r" src="korica.jpeg">
+        <p>Этого всего вы не сможете у нас заказать, зато мы делаем потрясные булочки с корицей, а это вам не абы что. О таких булочках легенды у нас в городе ходят что уж тут сказать. Помимо булочек у нас есть морс вкусный, но это так, если хочет кто.</p>
+      </div>
+    </section>
     </main>
     <footer>
-      <h1><a href="#top">Д</a></h1>
+      <!-- <h1><a href="#top">Д</a></h1> -->
       <div>
         <ul>
+          <li><h1><a href="#top">Д</a></h1></li>
           <li>@dosya-vpechke</li>
           <li>facebook</li>
           <li>@insta-dosya</li>
