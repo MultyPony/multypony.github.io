@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Пекарня "Дося"</title>
+    <style>
+
+      @import url('https://fonts.googleapis.com/css?family=Pattaya&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Andika&display=swap');
+
+      header {
+        display: flex;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+        font-family: 'Andika', sans-serif;
+      }
+
+      body {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-flow: column;
+        min-height: 100vh;
+      }
+
+      header {
+        /* display: flex; */
+        height: 70vh;
+      }
+
+      #d1 {
+        background-image: linear-gradient(to right, #949375, #e8f0f2);
+      }
+
+      #d2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-image: url(head.jpg);
+        /* background-position: center; */
+        background-position: 50% 65%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        text-align: center;
+        color: red;
+        /* filter: blur(3px); */
+      }
+
+      #d2 h1 {
+        font-family: 'Ruslan Display', cursive;
+        font-size: 5rem;
+        text-shadow: 1px 1px 5px black;
+      }
+
+      footer h1 {
+        /* display: inline; */
+        font-family: 'Ruslan Display', cursive;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 2rem;
+        padding: 0 .5rem;
+      }
+
+      footer h1:hover {
+        border-color: white;
+        color: white;
+      }
+
+      #d2 span {
+        /* font-family: 'Pattaya', sans-serif; */
+      }
+
+      #d1, #d3 {
+        width: 0%;
+        /* filter: blur(0); */
+      }
+
+      #d3 {
+        background-image: linear-gradient(to left, red, yellow);
+      }
+
+
+      main {
+        flex: 1;
+        /* background-image: linear-gradient(to right, #ff1a1a, #b30000); */
+        /* background-image: linear-gradient(to right, #ff1a1a, #802b00); */
+        /* background-color: #b30000; */
+        background-color: white;
+        /* height: 60vh; */
+      }
+
+      main section {
+        /* background-color: gray; */
+        /* border-left: 1px solid white; */
+        /* border-right: white; */
+        color: #4a0c0c;
+        margin: 0 auto;
+        padding: 2rem;
+        max-width: 700px;
+        font-size: 1.5rem;
+      }
+
+      footer {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #660000, #800000);
+        flex: 1;
+        padding: 1rem;
+        /* height: 10vh; */
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+      }
+
+      li {
+        padding: 1rem;
+      }
+
+      /* li a {
+        text-decoration: underline;
+      } */
+
+    </style>
+  </head>
+  <body id="top">
+    <header>
+      <div id="d1"></div>
+      <div id="d2"><h1>Пекарня Дося</h1></div>
+      <div id="d3"></div>
+      <!-- <span>Пекарня "Дося"</span> -->
+    </header>
+    <main>
+      <section>
+        <h2>Мы не ПОРОШОК!</h2>
+
+        <p>Этого всего вы не сможете у нас заказать, зато мы делаем потрясные булочки с корицей, а это вам не абы что. О таких булочках легенды у нас в городе ходят что уж тут сказать. Помимо булочек у нас есть морс вкусный, но это так, если хочет кто.
+        </p>
+    </section>
+    </main>
+    <footer>
+      <h1><a href="#top">Д</a></h1>
+      <div>
+        <ul>
+          <li>@dosya-vpechke</li>
+          <li>facebook</li>
+          <li>@insta-dosya</li>
+          <li><a href="mailto:pekarnyadosya@takoypochti.net">pekarnyadosya@takoypochti.net</a></li>
+          <li>Телефон: <a href="tel:8800000555">8800000555</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
