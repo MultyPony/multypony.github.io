@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Пекарня "Дося"</title>
@@ -8,126 +8,105 @@
       @import url('https://fonts.googleapis.com/css?family=Pattaya&display=swap');
       @import url('https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap');
       @import url('https://fonts.googleapis.com/css?family=Andika&display=swap');
-
-      header {
-        display: flex;
-      }
+      @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 
       * {
         margin: 0;
         padding: 0;
-        /* box-sizing: border-box; */
-        font-family: 'Andika', sans-serif;
+        box-sizing: border-box;
       }
 
       body {
-        display: flex;
-        /* justify-content: space-between; */
-        flex-flow: column;
         min-height: 100vh;
       }
 
       header {
-        /* display: flex; */
         height: 70vh;
-      }
-
-      #d1 {
-        background-image: linear-gradient(to right, #949375, #e8f0f2);
-      }
-
-      #d2 {
         display: flex;
         flex-flow: column;
         justify-content: center;
-        background-image: url(head.jpg);
-        /* background-position: center; */
+        align-items: center;
+        background-image: url("head.jpg");
         background-position: 50% 65%;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
         text-align: center;
         color: red;
-        /* filter: blur(3px); */
       }
 
-      #d2 h1 {
+      header h1 {
         font-family: 'Ruslan Display', cursive;
         font-size: 5rem;
         text-shadow: 1px 1px 5px black;
+        animation-duration: 1.5s;
+        animation-name: appear;
+        position: sticky;
+        top: 1rem;
       }
 
-      footer h1 {
-        /* display: inline; */
-        font-family: 'Ruslan Display', cursive;
-        text-align: center;
-        border: 1px solid black;
-        border-radius: 2rem;
-        padding: 0 .5rem;
+      /* animation */
+      @keyframes appear {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
 
-      footer h1:hover {
-        border-color: white;
+      .redrow {
+        background-image: linear-gradient(to bottom right, red, #e60000);
+        padding: 1rem 2rem 2rem 2rem;
+        /* text */
         color: white;
-      }
-
-      #d2 span {
-        /* font-family: 'Pattaya', sans-serif; */
-      }
-
-      #d1, #d3 {
-        width: 0%;
-        /* filter: blur(0); */
-      }
-
-      #d3 {
-        background-image: linear-gradient(to left, red, yellow);
-      }
-
-
-      main {
-        flex: 1;
-        /* background-image: linear-gradient(to right, #ff1a1a, #b30000); */
-        /* background-image: linear-gradient(to right, #ff1a1a, #802b00); */
-        /* background-color: #b30000; */
-        background-color: white;
-        /* height: 60vh; */
-      }
-
-      .row {
-        /* background-color: gray; */
-        /* border-left: 1px solid white; */
-        /* border-right: white; */
-        color: #4a0c0c;
-        /* margin: 0 auto; */
-        padding: 2rem;
-        max-width: 700px;
+        font-family: 'Pattaya', sans-serif;
         font-size: 1.5rem;
+        text-align: center;
       }
 
-      .mid {
-        margin: 0 auto;
+      .whiterow {
+        margin: 2.5rem auto;
+        max-width: 900px;
+        background-color: white;
+        color: #a60505;
+        font-family: 'Andika', sans-serif;
+        font-size: 1.2rem;
+        display: flow-root;
       }
 
-      .left {
-        margin-left: 10%;
-      }
+      /* .whiterow::after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
 
       footer {
+        padding: 1rem;
+        overflow: hidden;
         display: flex;
         flex-flow: wrap;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient(to bottom, #660000, #800000);
-        flex: 1;
-        padding: 1rem;
-        /* height: 10vh; */
+        background-image: linear-gradient(to bottom, #1a0000, #000000);
+        /* text */
+        color: white;
+        font-family: 'Andika', sans-serif;
       }
 
-      a {
-        text-decoration: none;
-        color: inherit;
-        font-family: inherit;
+      .logo {
+        font-family: 'Ruslan Display', cursive;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 .5rem;
+      }
+
+      .logo:hover {
+        color: red;
+      }
+
+      .mid {
+        margin: 0 auto;
+        max-width: 900px;
       }
 
       ul {
@@ -139,67 +118,91 @@
         padding: 1rem;
       }
 
-      img.l {
-        float: right;
-        display: block;
-        width: 15rem;
-        height: 15rem;
-        margin-right: .5em;
+
+      .whiterow > img {
+        max-width: 50%;
+        height: auto;
+        border-radius: .5rem;
       }
 
-      img.r {
+      .whiterow img:nth-of-type(2n+1) {
         float: left;
-        display: block;
-        width: 15rem;
-        height: 15rem;
-        margin-left: .5em;
+        margin: 0 1rem 0 0;
       }
 
-      .flex {
-        display: flex;
-        margin: 0 auto;
-        max-width: 1400px;
+      .whiterow img:nth-of-type(2) {
+        float: right;
+        margin: 2rem 0 2rem 1rem;
       }
+
+      .whiterow img:nth-of-type(2n+1) + h2,
+      .whiterow img:nth-of-type(2n+1) + p {
+        clear: right;
+      }
+
+      .whiterow img:nth-of-type(2) + h2 {
+        padding-top: 2rem;
+        clear: left;
+      }
+
+      /* Links */
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+      }
+
+
+      /* TODO:  */
+      /* Иконки социальных сетей для футера */
 
     </style>
   </head>
-  <body id="top">
-    <header>
-      <div id="d1"></div>
-      <div id="d2"><h1>Пекарня Дося</h1></div>
-      <div id="d3"></div>
-      <!-- <span>Пекарня "Дося"</span> -->
-    </header>
-    <main>
-      <section class="row mid">
-        <h2>Мы не ПОРОШОК!</h2>
 
-        <p>Этого всего вы не сможете у нас заказать, зато мы делаем потрясные булочки с корицей, а это вам не абы что. О таких булочках легенды у нас в городе ходят что уж тут сказать. Помимо булочек у нас есть морс вкусный, но это так, если хочет кто.
-        </p>
-    </section>
-    <section class="row left flex">
-      <div>
-        <img class="l" src="korica.jpeg">
-        <p>Этого всего вы не сможете у нас заказать, зато мы делаем потрясные булочки с корицей, а это вам не абы что. О таких булочках легенды у нас в городе ходят что уж тут сказать. Помимо булочек у нас есть морс вкусный, но это так, если хочет кто.</p>
-      </div>
-      <div>
-        <img class="r" src="korica.jpeg">
-        <p>Этого всего вы не сможете у нас заказать, зато мы делаем потрясные булочки с корицей, а это вам не абы что. О таких булочках легенды у нас в городе ходят что уж тут сказать. Помимо булочек у нас есть морс вкусный, но это так, если хочет кто.</p>
-      </div>
-    </section>
+  <body id="top">
+
+    <header>
+        <h1>Пекарня Дося</h1>
+    </header>
+
+    <main>
+      <section class="redrow">
+        <div class="mid">
+          <h2>Добро пожаловать!</h2>
+          <p>Пекарня Дося - это фамильная пекарня, в которой опыт предков передавался из поколения в поколения пока не был совмещен с современными технологиями.
+          Лучшее из лучшего для лучших из лучших, что может быть лучше!
+          </p>
+          </p>
+        </div>
+      </section>
+
+      <section class="whiterow">
+          <img src="powder.jpg">
+          <h2>Мука</h2>
+          <p>Каждое зернышко прошло проверку у Путина.</p>
+          <img src="milk.jpg">
+          <h2>Молоко</h2>
+          <p>Лучшее молоко от лучших коровок. Химии ноль - корпорации долой.</p>
+          <img src="drozi.jpg">
+          <h2>Дрожжи</h2>
+          <p>Сначала поднимут тесто, а потом ваше настроение! Сочные, вкусные булочки. Ммм!</p>
+      </section>
+
     </main>
+
     <footer>
-      <!-- <h1><a href="#top">Д</a></h1> -->
       <div>
         <ul>
-          <li><h1><a href="#top">Д</a></h1></li>
+          <li><span class="logo"><a href="#top">Д</a></span></li>
           <li>@dosya-vpechke</li>
           <li>facebook</li>
           <li>@insta-dosya</li>
           <li><a href="mailto:pekarnyadosya@takoypochti.net">pekarnyadosya@takoypochti.net</a></li>
-          <li>Телефон: <a href="tel:8800000555">8800000555</a></li>
+          <li>Телефон: <a href="tel:8800000555" target="_blank">8800000555</a></li>
         </ul>
       </div>
     </footer>
+
   </body>
+
 </html>
