@@ -1,4 +1,4 @@
-# multypony.github.io
+# multypony.github.io :yum:
 magazine/site-layout.png **Макет**
 
 
