@@ -13,5 +13,5 @@ magazine/fashion.html **Результат**
 
 
 
-
+<a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown</a>
 [Markdown](https://guides.github.com/features/mastering-markdown/)
