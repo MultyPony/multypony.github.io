@@ -4,4 +4,4 @@ magazine/site-layout.png **Макет**
 
 magazine/fashion.html **Результат**
 
-[Дося](multypony.github.io/dosya/dosya.html)
+[Дося](https://multypony.github.io/dosya/dosya.html)
