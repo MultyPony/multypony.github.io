@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans|Lato&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 3000px;   /* DELETE THIS PR */
+
+  font-family: 'Lato', sans-serif;
+}
+
+.row1_container {
+  height: 821px;
+  width: 1800px;
+  /* height: 735px; */
+  background-color: #b19c93;
+  border-bottom-left-radius: 900px 170px;
+  border-bottom-right-radius: 900px 170px;
+  /* 0px 0px 400px 400px / 0px 0px 95px 95px; */
+  color: white;
+  /* position: absolute; */
+  margin-left: -100px;
+  /* background-image: linear-gradient(135deg, rgba(222, 129, 60, 1), rgba(63, 81, 154, 1)), url("Layer_2.jpg"); */
+  background-image: linear-gradient(to bottom right, rgba(252, 108, 1, 0.7), rgba(19, 53, 189, 0.7)), url("../images/Layer_2.jpg");
+  background-position: 100px 0px;
+}
+
+.row1 {
+  width: 1600px;
+  /* height: inherit; */
+  margin: 0 auto;
+  /* background-image: linear-gradient(to right, #de813c , #3f519a); */
+  /* opacity: 0.9; */
+  /* background-image: url("Layer_2.jpg"); */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 43px;
+  margin-right: 65px;
+  flex-basis: 713px;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: 'Lato', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-left: 52px;
+  letter-spacing: -4px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  line-height: 40px;
+  width: 141px;
+  height: 40px;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #de813c 0%, #3f519a 100%);
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+
+  /* border: 1px solid black; */
+  /* color: black; */
+}
+
+.whiteb {
+  background: linear-gradient(to right, #fff 0%, #fff 100%);
+  color: black;
+  margin: 40px 0 0 285px;
+}
+
+.centerb {
+  transform: translateY(50%);
+  margin: 0 auto;
+}
+
+.row1_2 {
+  width: 681px;
+  margin: 130px 0 0 420px;
+
+}
+
+.row1_2 h2 {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 115px;
+  margin-top: -10px;
+}
+
+h2 {
+  color: #333332;
+  font-family: 'Dancing Script', cursive;;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: -1.58px;
+}
+
+p {
+  color: #040404;
+}
+
+.row1 h2 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  margin-top: 25px;
+  font-size: 37px;
+  word-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: .46px;
+}
+
+.row1_2 p {
+  color: white;
+  margin: 35px 0 0 1px;
+  line-height: 23px;
+  word-spacing: 1px;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  text-indent: 10px;
+
+  /* Style for "Ut enim ad" */
+  /* width: 639px;
+  height: 39px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px; */
+}
+
+
+
+.point {
+  margin-left: 1px;
+  font-size: 100px;
+  color: #fba419;
+  position: absolute;
+  top: -27px;
+}
+
+.profit_container {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1170px;
+  /* border: 1px solid black; */
+  margin: -160px auto 0 auto;
+}
+
+.profit_box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  width: 372px;
+  height: 414px;
+  justify-content: flex-end;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+}
+
+/* .profit_box::after {
+  content: 'Read More';
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #dd813d 0%,#415299 100%);
+  text-decoration: none;
+  border-radius: 20px;
+  width: 145px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 24px 10px 24px;
+  margin: -20px auto;
+  letter-spacing: 1px;
+  /* z-index: 10; */
+
+.content {
+  /* border: 1px solid black; */
+  /* background-color: red; */
+  padding: 20px 70px 4px 50px;
+}
+
+.content h3 {
+  font-size: 25px;
+  padding: 0 0 20px 0;
+}
+
+.content p {
+  line-height: 23px;
+  font-size: 16px;
+  width: 250px;
+}
+
+#best_track {
+  background-image: url("../images/Rectangle1.jpg");
+  background-repeat: no-repeat;
+  background-position: -10px -25px;
+}
+
+#trusted {
+  background-image: url("../images/Rectangle2.jpg");
+  background-repeat: no-repeat;
+  background-position: -10px -25px;
+}
+
+#brandeq {
+  background-image: url("../images/Rectangle3.jpg");
+  background-repeat: no-repeat;
+  background-position: -10px -25px;
+}
+
+/* ========= ROW 3 ================ */
+
+.row3 {
+  margin-top: 136px;
+}
+
+.row3_container {
+  margin: 0 auto;
+
+  height: 518px;
+  width: 1179px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background: url("../images/qq.jpg") 686px 24px no-repeat, url("../images/LetterA.jpg") 363px no-repeat;
+}
+
+.col {
+  /* width: 386px; */
+}
+
+.row3 .col .button {
+  margin: 39px 0 0 11px;
+}
+
+.row3 .col h2 span, .row3 p span {
+  display: block;
+}
+
+.row3 .col h2 ~ p {
+  width: 386px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: .13px;
+  margin: 32px 0 0 6px;
+}
+
+.col:nth-of-type(1) p span {
+  font-weight: bold;
+}
+
+.row3 .col > span{
+  display: block;
+  color: #333332;
+  font-family: 'Dancing Script', cursive;
+  font-size: 47px;
+  font-weight: 400;
+  letter-spacing: -1.58px;
+  margin: 45px 0 0 60px;
+}
+
+.row3_container .col:nth-of-type(2) p {
+  width: 389px;
+  height: 227px;
+  /* color: #040404; */
+  color: #040404;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30px;
+  /* letter-spacing: 0.45px; */
+  margin: 65px 0 0 0;
+  /* font-weight: bold; */
+}
+
+
+/* main.css | file:///C:/Users/Admin/Desktop/IT/portfolio/DigitalPoint/main.css */
+
+/* .row3_container .col:nth-of-type(2) p { */
+  /* width: 386px; */
+  /* color: #040404; */
+  /* letter-spacing: 0.45px; */
+  /* margin: 65px 0 0 0; */
+  /* width: 389px; */
+  /* color: #000; */
+  /* letter-spacing: 0px; */
+  /* margin: 65px 0px 0 0; */
+/* } */
+
+
+
+.row3 .col h2 {
+  margin-left: 18px;
+}
