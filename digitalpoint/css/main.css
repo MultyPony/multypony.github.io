@@ -270,10 +270,6 @@ p {
   background: url("../images/qq.jpg") 686px 24px no-repeat, url("../images/LetterA.jpg") 363px no-repeat;
 }
 
-.col {
-  /* width: 386px; */
-}
-
 .row3 .col .button {
   margin: 39px 0 0 11px;
 }
@@ -335,4 +331,106 @@ p {
 
 .row3 .col h2 {
   margin-left: 18px;
+}
+
+
+/* ========== ROW 4 ========== */
+
+.row4 {
+  margin-top: 121px;
+}
+
+.row4_container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.row4 .col {
+  /* border: 1px solid black; */
+  height: 753px;
+  width: 571px;
+  /* background-color: red; */
+}
+
+.row4 .abs {
+  /* background-color: blue; */
+  position: absolute;
+  top: 202px;
+  left: 221px;
+  /* Style for "Rounded Re" */
+  width: 727px;
+  height: 368px;
+  box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.row4 .abs p {
+  /* Style for "Lorem ipsu" */
+  width: 650px;
+  height: 137px;
+  color: #040404;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 30px;
+  /* Text style for "L, orem ip" */
+  letter-spacing: 0.45px;
+  margin: 24px auto 0 50px;
+}
+
+.row4 .abs h2 {
+  margin: 25px 0 0 0;
+}
+
+.row4 .abs > .button {
+  margin: 48px 0 0 308px;
+}
+
+.row4 .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row4 .fpic, .row4 .spic {
+  width: 571px;
+  height: 365px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+}
+
+#tatooforg {
+  background-image: url("../images/tatooforg.jpg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: -16px -16px;
+}
+
+#penic {
+  background-image: url("../images/penic.jpg");
+  background-repeat: no-repeat;
+  background-position: -12px 0px;
+  /* background-size: cover; */
+}
+
+#vagineer {
+  background-image: url("../images/vagineer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: 0px -15px;
+}
+
+#gitarg {
+  background-image: url("../images/gitarg.jpg");
+  background-repeat: no-repeat;
+  /* background-size: auto; */
+  background-position: -278px;
 }
