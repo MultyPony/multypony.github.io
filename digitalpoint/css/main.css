@@ -1019,6 +1019,7 @@ p {
 .price_container > .col:nth-of-type(2)  p:nth-of-type(1) {
   margin: 25px 0 0 452px;
   font-weight: bold;
+  letter-spacing: 0.3px;
 }
 
 .price_container > .col:nth-of-type(2)  p:nth-of-type(2) {
@@ -1045,7 +1046,9 @@ p {
   height: 587px;
   box-shadow: 0 0 49px rgba(0, 0, 0, 0.07);
   background-color: #ffffff;
-  /* background-image: url("../img/dollars.svg"); */
+  background-image: url("../img/dollari.jpg");
+  background-repeat: no-repeat;
+  background-position: 43px 165px;
 }
 
 .price__layout > .col:first-of-type h2 {
@@ -1151,11 +1154,29 @@ p {
   font-weight: 500;
   /* Text style for "L, orem ip" */
   letter-spacing: 0.5px;
-  margin: 25px 0 0 90px;
+  margin: 25px 0 0 62px;
+  list-style: none;
 }
 
 .price__layout > .col:nth-of-type(2) li {
   margin: 0 0 20px 0;
+}
+
+.price__layout > .col:nth-of-type(2) li::before {
+  /* margin: 0 0 20px 0; */
+  /* display: block; */
+  content: '';
+  display: inline-block;
+  /* background-color: red; */
+  background-image: url('../img/check-solid-white.svg');
+  height: 14px;
+  width: 14px;
+  margin: 0 15px 0 0;
+}
+
+.price__layout > .col:nth-of-type(2) li span {
+  /* position: relative; */
+  /* left: 12px; */
 }
 
 .price__layout > .col:nth-of-type(2) .button {
