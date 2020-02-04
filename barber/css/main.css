@@ -23,9 +23,9 @@ header {
 
 nav {
   background-color: #826550;
-  /* max-height: 50px; */
+  max-height: 50px;
   /* font-size: 2rem; */
-  padding: .9rem 0;
+  /* padding: .9rem 0; */
   position: relative;
 }
 
@@ -33,9 +33,15 @@ nav::before {
   content: 'Главная';
   color: white;
   font-size: 1.125rem;
-  display: block;
+  display: table-cell;
   text-align: center;
-  /* position: relative; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  /* top: 0; */
+  vertical-align: middle;
+  /* width: 100%; */
 }
 
 /* nav::after { */
@@ -77,9 +83,9 @@ nav::before {
 .menu__btn {
   display: flex;
   align-items: center;
-  position: fixed;
-  top: 20px;
-  left: 20px;
+  /* position: absolute; */
+  /* top: 20px; */
+  /* left: 20px; */
 
   width: 26px;
   height: 26px;
